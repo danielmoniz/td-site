@@ -1,0 +1,16 @@
+
+<h1>Future Tower Defense</h1>
+
+<%= form_tag '/game', method: :post do %>
+
+  <p>
+    <%= label_tag :game_name %>
+    <%= text_field_tag :game_name, nil, placeholder: "eg. 35 or gregs_game" %>
+  </p>
+
+  <p>
+    <%= submit_tag "Create (or join) game" %>
+  </p>
+
+
+<% end %>
